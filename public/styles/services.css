@@ -1,0 +1,64 @@
+.accordian {
+  width: 70%;
+  margin: 40px auto 30px auto;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.accordian label {
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  cursor: pointer;
+  color: rgba(#777777, 0.85);
+  line-height: 33px;
+  font-size: 19px;
+  background: rgba(#a4aaa0, 0.94);
+  color: #FAFAFA;
+}
+.accordian label:hover {
+  background: #ffc0cb;
+  color: #555;
+}
+.accordian input {
+  display: none;
+}
+.accordian input:checked + label {
+  background: #A4A9A0;
+  color: #fff;
+}
+.accordian input:checked + label:hover {
+  background: #555;
+  color: #fff;
+}
+.accordian article {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out;
+}
+.accordian article p {
+  color: #555;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 0px 20px 0px 20px;
+}
+.accordian input:checked ~ article {
+  transition: height 0.5s ease-in-out;
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+.accordian input:checked ~ article.item-small {
+  height: 120px;
+}
+.accordian input:checked ~ article.item-medium {
+  height: 165px;
+}
+
+article {
+  background: #fff;
+}
