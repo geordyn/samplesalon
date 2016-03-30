@@ -69,3 +69,22 @@ $(window).scroll(function() {
   }
 
 });
+
+
+
+ // TEAM RANDOMIZED FOR MOBILE VIEW
+
+ var cards = $(".stylist-mobile");
+ for(var i = 0; i < cards.length; i++){
+     var target = Math.floor(Math.random() * cards.length -1) + 1;
+     var target2 = Math.floor(Math.random() * cards.length -1) +1;
+     cards.eq(target).before(cards.eq(target2));
+ }
+
+ // TEAM ON CLICK SHOW BIO
+ var $contents = $('.stylist-content');
+ $contents.slice(1).hide();
+ $('.stylist-mobile').click(function() {
+   var $target = $('#' + this.id + 'show').show();
+   $contents.not($target).hide();
+ });
