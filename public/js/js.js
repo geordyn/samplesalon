@@ -38,7 +38,8 @@ $(window).scroll(function() {
   aboutPos = $('.about-wrapper').offset().top,
   servicePos = $('.services-wrapper').offset().top,
   productPos = $('.products-wrapper').offset().top,
-  contactPos = $('.contact-wrapper').offset().top;
+  teamPos = $('.team-wrapper').offset().top,
+  contactPos = $('#contact').offset().top;
 
   if (scrollPos >= aboutPos && scrollPos < servicePos) {
     $('.link-a').addClass('selected');
@@ -47,11 +48,18 @@ $(window).scroll(function() {
     $('.link-a').removeClass('selected');
   }
 
-  if (scrollPos >= servicePos && scrollPos < productPos) {
+  if (scrollPos >= servicePos && scrollPos < teamPos) {
     $('.link-b').addClass('selected');
   }
   else {
     $('.link-b').removeClass('selected');
+  }
+
+  if (scrollPos >= teamPos && scrollPos < productPos) {
+    $('.link-d').addClass('selected');
+  }
+  else {
+    $('.link-d').removeClass('selected');
   }
 
   if (scrollPos >= productPos && scrollPos < contactPos) {
@@ -62,10 +70,10 @@ $(window).scroll(function() {
   }
 
   if (scrollPos >= contactPos) {
-    $('.link-d').addClass('selected');
+    $('.link-e').addClass('selected');
   }
   else {
-    $('.link-d').removeClass('selected');
+    $('.link-e').removeClass('selected');
   }
 
 });
