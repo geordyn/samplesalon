@@ -80,7 +80,7 @@ $(window).scroll(function() {
 
 
 
- // TEAM RANDOMIZED FOR MOBILE VIEW
+ // TEAM RANDOMIZED, FOR MOBILE VIEW
 
  var cards = $(".stylist-mobile");
  for(var i = 0; i < cards.length; i++){
