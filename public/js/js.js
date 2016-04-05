@@ -80,13 +80,14 @@ $(window).scroll(function() {
 
 
 
- // TEAM RANDOMIZED, FOR MOBILE VIEW
+ // TEAM RANDOMIZED //MOBILE VIEW
 
  var cards = $(".stylist-mobile");
  for(var i = 0; i < cards.length; i++){
      var target = Math.floor(Math.random() * cards.length -1) + 1;
      var target2 = Math.floor(Math.random() * cards.length -1) +1;
      cards.eq(target).before(cards.eq(target2));
+     //test purposes
  }
 
  // TEAM ON CLICK SHOW BIO
