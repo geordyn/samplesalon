@@ -151,7 +151,7 @@ h3
     width: 100%;
     padding: 0px;
 
-    background: #f4f4f4;
+    background: #222;
     box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
 
@@ -161,10 +161,14 @@ h3
     z-index: 100;
     height: 100px;
 }
+.res-menu-link {
+    background: #222;
+}
 .page-menu-bar li a
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 4em;
+    font-size: 30px;
+    margin: 0 auto;
     /*font-weight: 300;*/
 
     text-decoration: none;
@@ -200,13 +204,13 @@ h3
 .res-menu
 {
     display: none;
+
 }
 .res-menu li
 {
     display: block;
-
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 .res-menu {
     padding: 0px;
@@ -219,7 +223,7 @@ h3
     padding: 16px;
 
     color: white;
-    border-bottom: 1px solid #333;
+    /*border-bottom: 1px solid #333;*/
     background: #222;
 }
 .res-menu li a:hover
