@@ -1,8 +1,3 @@
-*{
-  margin:0;
-  padding:0;
-}
-
 /*
 Width of image : 500;
 Width of hovered image: 500
@@ -15,72 +10,15 @@ Default 700/5 : 140px;
     overflow-x: hidden;
 }
 
-.team-photos{
-  width: 705px;
-  height: 333px;
-  overflow:hidden;
-  margin: auto;
-  margin: 100px auto;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0px 8px 6px -6px black;
-}
-.team-photos ul{
-    text-align: left;
-}
-.team-photos li{
-  position: relative;
-  display:block;
-  width:140px;
-  float: left;
-
-  border-left: 1px solid #888;
-  -webkit-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
-
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-}
-
-
-.team-photos ul:hover li{
-  width: 50px;
-}
-
-.team-photos ul li:hover{
-  width:500px;
-  z-index: 2;
-}
-
-.team-photos li img{
-  display: block;
-}
-
-.image_title{
-  background: rgba(0,0,0,0.5);
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:500px;
-}
-
-.image_title a{
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding:20px;
-  font-size:16px;
-}
 
 /*// MOBILE STYLIST VIEW */
 
 .team-photos-mobile .stylist1 {
-    background-image: url('./photos/employee1m.jpeg');
+    background-image: url('./photos/kasey.jpg');
     background-size: cover;
 }
 .team-photos-mobile .stylist2 {
-    background-image: url('./photos/employee2m.jpeg');
+    background-image: url('./photos/jay.jpg');
     background-size: cover;
 }
 
@@ -89,12 +27,15 @@ Default 700/5 : 140px;
 .stylist-content {
     display: none;
     max-height: 150px;
-    min-height: 150px;
+    min-height: 200px;
     color: #F4F4F4;
     background-color: rgba(34, 34, 34, 0.67);
     border-radius: 8px;
     padding: 0.5em;
     box-sizing: border-box;
+    margin-top: 300px;
+    overflow: auto;
+    font-size: 20px;
 }
 
 
@@ -105,7 +46,7 @@ Default 700/5 : 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     /*display: none;*/
 }
@@ -113,8 +54,8 @@ Default 700/5 : 140px;
 .stylist-mobile {
 	margin: 8px;
 	float: left;
-	height: 150px;
-	width: 221px;
+	height: 500px;
+	width: 600px;
 	background-color: rgba(0, 0, 0, .3);
 	border-radius: 8px;
     /*margin: auto;*/
@@ -124,4 +65,28 @@ Default 700/5 : 140px;
     /*align-items: center;*/
     /*justify-content: center;*/
 
+}
+
+@media screen and (min-device-width: 800px)
+{
+    .team {
+        padding: 15px;
+        margin: auto;
+    }
+    .stylist-mobile {
+        width: 300px;
+        height: 250px;
+    }
+    .team-photos-mobile {
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px;
+        /*width: 60%;*/
+    }
+    .stylist-content {
+        margin-top: 50px;
+        height: 300px;
+    }
 }

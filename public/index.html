@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/team.css">
@@ -21,26 +23,35 @@
             <li class="res-menu-link"><a href="#products">PRODUCTS</a></li>
             <li class="res-menu-link"><a href="#team">OUR TEAM</a></li>
             <li class="res-menu-link"><a href="#contact">CONTACT</a></li>
+            <li class="res-menu-link"><a href="https://www.instagram.com/divinitysalonboutique/">INSTAGRAM</a></li>
+            <li class="res-menu-link"><a href="https://www.facebook.com/Divinitysalonandboutique">FACEBOOK</a></li>
+            <li class="res-menu-link"><a href="https://twitter.com/Divinity_Salon">TWITTER</a></li>
 
+            <li class="res-menu-link pink phone">760-436-2932</li>
         </ul>
-        <ul class="page-menu">
-            <li class="menu-link"><a class="link-a" href="#about">ABOUT</a></li>
-            <li class="menu-link"><a class="link-b" href="#services">SERVICES</a></li>
-            <li class="menu-link"><a class="link-d" href="#team">OUR TEAM</a></li>
-            <li class="menu-link"><a class="link-c" href="#products">PRODUCTS</a></li>
-            <li class="menu-link"><a class="link-e" href="#contact">CONTACT</a></li>
 
-        </ul>
         <div class="res-menu-button">
-            &equiv;
+            <img class="menuLogo" src="./styles/photos/DIVINITY.png" />
+            <i class="fa fa-2x fa-bars menuBtn" aria-hidden="true"></i>
+
         </div>
+    </div>
+    <div class="desktopMenu">
+        <ul class="page-menu">
+            <li class="menu-link"><a class="link-a notPink" href="#about">ABOUT</a></li>
+            <li class="menu-link"><a class="link-b notPink" href="#services">SERVICES</a></li>
+            <li class="menu-link"><a class="link-d notPink" href="#team">OUR TEAM</a></li>
+            <li class="menu-link"><a class="link-c notPink" href="#products">PRODUCTS</a></li>
+            <li class="menu-link"><a class="link-e notPink" href="#contact">CONTACT</a></li>
+
+        </ul>
     </div>
 
     <main>
-        <div class="banner">
+        <div class="banner" id="banner">
             <div class="pre-title">
                 <div class="pre-title-line"></div>
-                <div class="pre-title-text">SAMPLE SALON</div>
+                <div class="pre-title-text">Divinity Salon</div>
                 <div class="pre-title-line"></div>
             </div>
             <!-- <section class="banner"></section> -->
@@ -52,29 +63,46 @@
         <div class="about-wrapper" id="about">
             <h3>Who We Are <span class="pink">&rhard;</span></h3>
             <div class="about">
-                <p>We are a full-service salon centrally located in Wallingford, CT.  We have been in business for over 25 years.  Specializing in the art of color, including corrective color and dimensional foil highlighting, we strive to enhance our clients' inner and outer beauty.
+                <p>We are a full-service salon centrally located in Wallingford, CT. We have been in business for over 25 years. Specializing in the art of color, including corrective color and dimensional foil highlighting, we strive to enhance our clients'
+                    inner and outer beauty.
                 </p>
-                <p>We strive to have a fun, uplifting, friendly atmosphere with some of the most professional hair designers around.  When in our salon, you'll be treated with great service.  We give thorough and expert consultations before the start of your service. You'll know exactly what to expect and what you're getting before the start of your service. </p>
+                <p>We strive to have a fun, uplifting, friendly atmosphere with some of the most professional hair designers around. When in our salon, you'll be treated with great service. We give thorough and expert consultations before the start of your
+                    service. You'll know exactly what to expect and what you're getting before the start of your service. </p>
 
                 <img class="about-img" src="./styles/photos/circle.png">
             </div>
         </div>
         <div class="service-bg-wrapper">
+            <h3>What We Do <span class="pink">&rhard;</span></h3>
+
             <div class="services-wrapper" id="services">
-                <h3>What We Do <span class="pink">&rhard;</span></h3>
 
                 <section class="accordian">
 
                     <div>
                         <input id="item-1" name="accordian-item" type="radio" checked="">
-                        <label for="item-1">Services</label>
-                        <article class="item-small">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna. </p>
+                        <label for="item-1">
+                            <p>Services</p>
+                        </label>
+                        <article class="item-medium">
+                            <p>
+
+
+                                Services
+                                <br> View our full line of hair, skin care and nail services. Cut & Color, Brazilian Blowouts, Hair Extensions, Facials, Waxing, Minx nails and more.
+                                <br>
+                                <br> Spa Etiquette
+                                <br> For leisurely enjoyment of your full treatment please arrive 15-minutes prior to your appointment. Please note that your scheduled time is your table time. Due to adjacent appointments late arrivals will only be given
+                                the remainder of the time originally scheduled for the service.
+                                <br>
+                                <br> *Services and prices are subject to change without notice.</p>
                         </article>
                     </div>
                     <div>
                         <input id="hairCare" name="accordian-item" type="radio">
-                        <label for="hairCare">Hair Care</label>
+                        <label for="hairCare">
+                            <p>Hair Care</p>
+                        </label>
                         <article class="item-medium">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna, adipiscing
                                 sed dapibus eget, lacinia sit amet purus. Donec semper urna vel tellus laoreet fringilla a ac ligula. Suspendisse aliquam vehicula tortor.</p>
@@ -82,7 +110,9 @@
                     </div>
                     <div>
                         <input id="skinCare" name="accordian-item" type="radio">
-                        <label for="skinCare">Skin Care</label>
+                        <label for="skinCare">
+                            <p>Skin Care</p>
+                        </label>
                         <article class="item-medium">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna, adipiscing
                                 sed dapibus eget, lacinia sit amet purus. Donec semper urna vel tellus laoreet fringilla a ac ligula. Suspendisse aliquam vehicula tortor.</p>
@@ -90,7 +120,9 @@
                     </div>
                     <div>
                         <input id="nailCare" name="accordian-item" type="radio">
-                        <label for="nailCare">Nail Care</label>
+                        <label for="nailCare">
+                            <p>Nail Care</p>
+                        </label>
                         <article class="item-medium">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna, adipiscing
                                 sed dapibus eget, lacinia sit amet purus. Donec semper urna vel tellus laoreet fringilla a ac ligula. Suspendisse aliquam vehicula tortor.</p>
@@ -98,7 +130,9 @@
                     </div>
                     <div>
                         <input id="waxing" name="accordian-item" type="radio">
-                        <label for="waxing">Waxing</label>
+                        <label for="waxing">
+                            <p>Waxing</p>
+                        </label>
                         <article class="item-medium">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna, adipiscing
                                 sed dapibus eget, lacinia sit amet purus. Donec semper urna vel tellus laoreet fringilla a ac ligula. Suspendisse aliquam vehicula tortor.</p>
@@ -106,7 +140,9 @@
                     </div>
                     <div>
                         <input id="tinting" name="accordian-item" type="radio">
-                        <label for="tinting">Tinting</label>
+                        <label for="tinting">
+                            <p>Tinting</p>
+                        </label>
                         <article class="item-medium">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo elementum mauris non sagittis. Nam eu mauris eget ligula iaculis consequat eget vitae eros. Ut eget enim nisl, a tempor sapien. Morbi ante magna, adipiscing
                                 sed dapibus eget, lacinia sit amet purus. Donec semper urna vel tellus laoreet fringilla a ac ligula. Suspendisse aliquam vehicula tortor.</p>
@@ -121,7 +157,7 @@
             <h3>Meet Our Team <span class="pink">&rhard;</span></h3>
             <div class="team">
 
-                <div class="team-photos">
+                <!-- <div class="team-photos">
                     <ul>
                         <li>
                             <div class="image_title">
@@ -164,36 +200,48 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="team-photos-mobile">
                     <div id="s1" class="stylist-mobile stylist1">
-                        <div id="s1show" class="stylist-content"><p>Stylist 1<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s1show" class="stylist-content">
+                            <p>Stylist 1
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
                     <div id="s2" class="stylist-mobile stylist2">
-                        <div id="s2show" class="stylist-content"><p>Stylist 2<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s2show" class="stylist-content">
+                            <p>Stylist 2
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
 
                     <div id="s3" class="stylist-mobile stylist1">
-                        <div id="s3show" class="stylist-content"><p>Stylist 3<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s3show" class="stylist-content">
+                            <p>Stylist 3
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
 
                     <div id="s4" class="stylist-mobile stylist2">
-                        <div id="s4show" class="stylist-content"><p>Stylist 4<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s4show" class="stylist-content">
+                            <p>Stylist 4
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
 
                     <div id="s5" class="stylist-mobile stylist1">
-                        <div id="s5show" class="stylist-content"><p>Stylist 5<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s5show" class="stylist-content">
+                            <p>Stylist 5
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
 
                     <div id="s6" class="stylist-mobile stylist2">
-                        <div id="s6show" class="stylist-content"><p>Stylist 6<br>
-                        The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p></div>
+                        <div id="s6show" class="stylist-content">
+                            <p>Stylist 6
+                                <br> This box scrolls! The order of stylists on the page is randomized upon every refresh to ensure each stylist gets fair exposure to website traffic</p>
+                        </div>
                     </div>
 
                 </div>
@@ -206,21 +254,21 @@
                 <h3>What We Love <span class="pink">&rhard;</span></h3>
                 <section class="productCont">
                     <div class="product">
-                        <img src="http://i62.tinypic.com/2ziab6e.jpg">
+                        <img class="prodImg" src="./styles/photos/davines.png">
                         <p>If you have tried the Morrocanoil Treatment Oil (it’s super food for your hair), you will love all the new additions like the Extra Volume Shampoo and Conditioner that will inject body and bounce to the finest hair. We are one
                             of the few salons in the Illawarra that stocks the entire Retail Range.</p>
                     </div>
                     <!--
  -->
                     <div class="product">
-                        <img src="http://i58.tinypic.com/29n7bdy.jpg">
+                        <img class="prodImg" src="./styles/photos/kevinmurphy.png">
                         <p>Evo’s Retail Ranges have luxurious products that are sulphate, paraben, dea, tea and propylene free that give professional results while respecting the environment. The products in this range, we couldn’t live without, are the
                             amazing haze styling powder (great for adding volume when you are suffering from the flop) and the water killer dry shampoo (get that clean, bouncy hair that feels and smells fresh again with just a quick spray).</p>
                     </div>
                     <!--
  -->
                     <div class="product">
-                        <img src="http://i61.tinypic.com/qowrqu.jpg">
+                        <img class="prodImg" src="./styles/photos/barber.png">
                         <p>In today’s environmentally conscious age, Jeval Hair Colour focuses on blending technology with ecology. This results in hair colour that delivers absolute respect for your hair and the environment. The natural botanical plant
                             base is kind and gentle to the hair and scalp, also ensuring longer lasting, rich shiny colours. With 108 colours to choose from, the combinations are only limited to your imagination.</p>
                     </div>
@@ -229,8 +277,13 @@
         </div>
         <div class="contact-wrapper" id="contact">
             <h3>Get in Touch <span class="pink">&rhard;</span></h3>
+            <div class="socialLinks">
+                <a class="notPink" href="https://www.instagram.com/divinitysalonboutique/"><i class="fa fa-5x fa-instagram" aria-hidden="true"></i></a>
+                <a class="notPink" href="https://www.facebook.com/Divinitysalonandboutique"><i class="fa fa-5x fa-facebook-official" aria-hidden="true"></i></a>
+                <a class="notPink" href="https://twitter.com/Divinity_Salon"><i class="fa fa-5x fa-twitter-square" aria-hidden="true"></i></a>
+            </div>
             <div class="contact-form">
-                <form>
+                <form action="MAILTO:geordyn.ader@gmail.com" method="post" enctype="text/plain">
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email">
                     <input type="text" placeholder="Phone">
@@ -241,13 +294,20 @@
             <!--
  -->
             <div class="contact-side">
-                <p>Sample Salon is located in Encinitas, California. We have FREE parking!</p>
-                <p><span class="pink">Phone:</span> 555-555-5555<br>
+                <p>Divinity Salon is located in Encinitas, California. We have FREE parking!</p>
+                <p><span class="pink">Phone:</span> 555-555-5555
+                    <br>
                     <span class="pink">Email: </span><a>sameplesalon@donotemail.com</a></p>
                 <p class="hours-heading">Business Hours &profalar; </p>
-                <p>MON: 9a-5p<br> TUE: 9a-3p<br> WED: 9a-5p<br> THU: 9a-5p<br> FRI: 9a-5p<br> SAT: 8a-12p</p>
+                <p class="hours">MON: 9:00AM - 5:00PM
+                    <br> TUE: 9:00AM - 5:00PM
+                    <br> WED: 9:00AM - 5:00PM
+                    <br> THU: 9:00AM - 5:00PM
+                    <br> FRI: 9:00AM - 5:00PM
+                    <br> SAT: 8:00AM - 12:00PM</p>
             </div>
         </div>
+        <div class="toTop"><a href="#banner"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
     </main>
 
 

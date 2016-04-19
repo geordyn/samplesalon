@@ -5,15 +5,15 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .accordian label {
-  padding: 0.5em 1.5em;
+  padding: 0.5em;
   position: relative;
   z-index: 20;
   display: block;
-  height: 3em;
+  height: 2.5em;
   cursor: pointer;
   color: rgba(#777777, 0.85);
   line-height: 33px;
-  font-size: 19px;
+  font-size: 40px;
   background: rgba(#a4aaa0, 0.94);
   color: #FAFAFA;
 }
@@ -34,7 +34,7 @@
 }
 .accordian article {
   margin-top: -1px;
-  overflow: hidden;
+  overflow: auto;
   height: 0px;
   position: relative;
   z-index: 10;
@@ -43,7 +43,7 @@
 .accordian article p {
   color: #555;
   line-height: 23px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0px 20px 0px 20px;
 }
 .accordian input:checked ~ article {
@@ -56,20 +56,20 @@
   height: 120px;
 }
 .accordian input:checked ~ article.item-medium {
-  height: 165px;
+  height: 350px;
 }
 
 article {
   background: #FAFAFA;
 }
 
-@media only screen and (max-width: 960px)
+@media screen and (min-device-width: 800px)
 {
-    .accordian {
-        /*margin-bottom: 1.2em;*/
-    }
-    .accordian label {
-        padding: 0.5em;
-        height: 1.5em;
-    }
+.accordian {
+    margin: 0 auto;
+    width: 60%;
+}
+.accordian label {
+    font-size: 16px;
+}
 }
