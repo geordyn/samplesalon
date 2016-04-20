@@ -30,7 +30,7 @@ Default 700/5 : 140px;
     min-height: 200px;
     color: #F4F4F4;
     background-color: rgba(34, 34, 34, 0.67);
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     padding: 0.5em;
     box-sizing: border-box;
     margin-top: 300px;
@@ -76,6 +76,7 @@ Default 700/5 : 140px;
     .stylist-mobile {
         width: 300px;
         height: 250px;
+        overflow-x: hidden;
     }
     .team-photos-mobile {
         margin: auto;
@@ -83,10 +84,12 @@ Default 700/5 : 140px;
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px;
+        overflow-x: hidden;
         /*width: 60%;*/
     }
     .stylist-content {
         margin-top: 50px;
         height: 300px;
+        width: 315px;
     }
 }
