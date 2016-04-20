@@ -56,7 +56,7 @@
   height: 120px;
 }
 .accordian input:checked ~ article.item-medium {
-  height: 350px;
+  min-height: 600px;
 }
 
 article {
