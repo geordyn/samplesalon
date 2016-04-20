@@ -417,7 +417,7 @@ h4
 }
 .contactInfo {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .contact-wrapper .contact-form input
@@ -465,12 +465,11 @@ h4
     font-size: 1.5em;
 }
 
-.contact-wrapper .contact-side
+/*.contact-wrapper .contact-side
 {
     padding-top: 20px;
 
     /*border-left: 4px solid #736f6f;*/
-}
 
 .hoursInfo {
     text-align: center;
@@ -479,8 +478,8 @@ h4
     /*padding: 100px;*/
     border-bottom: 3px dotted pink;
 }
-.days{
-    font-size: 18px;
+.day{
+    margin-top: 10px;
 }
 
 
@@ -498,17 +497,15 @@ h4
 .contact-wrapper .contact-side p
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
     line-height: 1.8;
-
     margin-top: 0;
     margin-bottom: 20px;
 
     color: #999;
 }
-.contact-wrapper .contact-side .hoursInfo
+.hoursInfo
 {
-    font-size: 24px;
+    font-size: 33px;
     margin-top: 100px;
     /*border: 4px dotted pink;*/
 }
@@ -614,20 +611,28 @@ h4
         /*width: 100%;*/
         position: relative;
         /*margin-right: 5px;*/
+        font-size: 12px;
+        min-height: 60vh;
     }
-    .contact-form {
-        /*display: inline-block;
-        margin: auto;
-        width: 45%;*/
+    .contactSection {
+        display: flex;
+        flex-direction: row;
     }
     .contact-side {
-        /*display: inline-block;
-        margin: 0 auto;*/
-        /*border-left: 3px solid lightgray;*/
-
-
+        display: inline-block;
+        margin: auto;
+        padding-top: 0px;
+        /*width: 50%*/
+        flex: 1;
     }
-
+    .hoursInfo
+    {
+        display: inline-block;
+        font-size: 30px;
+        /*margin: 50px;*/
+        margin: 0px;
+        flex: 1;
+    }
     .contact-wrapper .contact-form input {
         height: 12px;
         font-size: 16px;
@@ -635,7 +640,7 @@ h4
     .contact-wrapper .contact-form .form-submit {
         height: 50px;
         font-size: 16px;
-        width: 40%;
+        /*width: 1%;*/
     }
     .contact-wrapper .contact-form textarea {
         height: 300px;
@@ -643,6 +648,10 @@ h4
     }
     .socialLinks {
         margin-bottom: 1em;
+        font-size: 15px;
+    }
+    .contactInfo {
+        font-size: 20px;
     }
     .toTop {
         font-size: 35px;
