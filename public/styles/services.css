@@ -9,7 +9,7 @@
   position: relative;
   z-index: 20;
   display: block;
-  height: 2.5em;
+  height: 65px;
   cursor: pointer;
   color: rgba(#777777, 0.85);
   line-height: 33px;
@@ -70,6 +70,12 @@ article {
     width: 60%;
 }
 .accordian label {
+    font-size: 16px;
+}
+.accordian input:checked ~ article.item-medium {
+  min-height: 250px;
+}
+.accordian article p {
     font-size: 16px;
 }
 }
