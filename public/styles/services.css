@@ -43,7 +43,7 @@
 .accordian article p {
   color: #555;
   line-height: 23px;
-  font-size: 16px;
+  font-size: 35px;
   padding: 0px 20px 0px 20px;
 }
 .accordian input:checked ~ article {
